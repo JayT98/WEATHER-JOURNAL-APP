@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(./background.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.headline {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    background-color: rgb(234, 46, 46);
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+#country,
+#zip,
+#feelings,
+#generate {
+    background: rgb(248, 248, 248);
+    margin: 15px auto 25px;
+    width: 50%;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    display: block;
+    font-size: 24px;
+    resize: none;
+}
+
+#country {
+    margin-top: 150px;
+}
+label{
+    display: none;
+}
+
+#country::placeholder,
+#zip::placeholder,
+#feelings::placeholder {
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    line-height: 60px;
+}
+
+#error {
+    background-color: white;
+    color: red;
+    font-size: 32px;
+    font-weight: bold;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    margin: 0px auto 40px;
+    border-radius: 10px;
+    display: block;
+}
+
+#feelings {
+    margin-top: 0;
+}
+#generate {
+    width: 20%;
+    margin-top: 25px;
+    background: #e31a1a;
+    cursor: pointer;
+    color: white;
+}
+#entry {
+    width: 60%;
+    background: #f17c7cda;
+    margin: 50px auto;
+    border-radius: 10px;
+    height: 250px;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+#entryHolder {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-rows: 60%;
+    grid-template-columns: 50% 50%;
+    font-size: 1.5vw;
+}
+#content {
+    grid-column: 1 / -1;
+}
+#temp {
+    font-size: 4vw;
+}
+
+#city {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 75px;
+    margin-right: 25px;
+}
